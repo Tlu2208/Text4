@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            padding: min(5em, 8%);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+
+        .header>h1 {
+            font-size: clamp(1.8rem, calc(2vw + 1rem), 5rem);
+            margin-bottom: 2vw;
+        }
+
+        .main {
+            width: 100%;
+            height: 80%;
+            padding: 0 10vw 0 10vw;
+        }
+
+        .item {
+            width: 100%;
+            /* height: 30%; */
+            margin-top: 3%;
+            display: flex;
+        }
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    </noscript>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>We release interesting articles about technology</h1>
+            <img src="./img/Seperator.svg" alt="">
+        </div>
+        <div class="main">
+            <div class="item">
+                <img src="./img/photo_1.png" alt="">
+                <div class="content">
+                    <h3>Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions</h3>
+                    <p>November 12, 2024</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/photo_2.png" alt="">
+                <div class="content">
+                    <h3>The Future of AI: How Machine Learning is Revolutionizing Industries</h3>
+                    <p>November 12, 2024</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/photo_3.png" alt="">
+                <div class="content">
+                    <h3>The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work</h3>
+                    <p>November 12, 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
